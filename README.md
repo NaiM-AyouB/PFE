@@ -99,7 +99,7 @@ The core goal is to **predict monthly or seasonal drinking water availability** 
 
 ## 👨‍💻 Author
 
-- Name: [Your Full Name]  
+- Name: [NAIM AYOUB]  
 - Degree: Bachelor's in Water & Environmental Sciences  
 - Region of Focus: Beni Mellal-Khénifra, Morocco  
 - Language: R  
