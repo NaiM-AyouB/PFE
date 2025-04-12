@@ -1,108 +1,134 @@
-# 📘 Final Project - Bachelor's Degree
-
-## 💧 Artificial Intelligence Applied to Water Management  
-### 📍 Case Study: Beni Mellal-Khénifra Region, Morocco
-
----
-
-## 🧠 Project Overview
-
-This project applies **machine learning** techniques to forecast the **availability of drinking water** in the **Beni Mellal-Khénifra** region. The aim is to support sustainable water management through data-driven predictions.
-
-The project is developed as part of a Bachelor's degree in water and environmental sciences and includes:
-
-- 📄 A written report  
-- 💻 A functional prototype/model  
-- 🧑‍🏫 A final presentation  
+# 💧 Groundwater Potential Prediction Using Machine Learning  
+### 🎓 Final Project – Bachelor's Degree in Water & Environmental Sciences  
+🧑‍💻 OS: Manjaro Linux | Tools: R, QGIS, Machine Learning, GIS
 
 ---
 
-## 🎯 Objectives
+## 📍 Study Area
+**Béni Mellal Province, Morocco**
 
-- Collect and analyze hydrological, climatic, and socio-economic data.
-- Develop a machine learning model to predict drinking water availability.
-- Evaluate model performance with metrics such as RMSE and R².
-- Create visualizations and (optionally) a dashboard to demonstrate results.
-- Propose recommendations for regional water planning based on predictions.
+---
+
+## 🎯 Project Overview
+
+This project aims to predict **groundwater potential zones** using **machine learning algorithms** based on geospatial, topographic, and hydrologic indicators. The goal is to support sustainable groundwater exploration and well-siting in semi-arid Moroccan regions like Béni Mellal.
+
+---
+
+## 🧠 Objectives
+
+- Collect and process spatial layers (elevation, rainfall, soil, etc.)
+- Build a labeled dataset using well data and environmental indicators
+- Train and evaluate machine learning models (e.g., Random Forest)
+- Produce a classified **groundwater potential map**
+- Present results via report, map visualizations, and presentation
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- **Language:** R  
-- **Packages:** 
-  - `tidyverse` – data wrangling and visualization
-  - `caret` or `tidymodels` – ML workflow
-  - `randomForest`, `xgboost`, `rpart` – algorithms
-  - `shiny` (optional) – dashboard for visualization
+### Programming
+- **R** (main language)
+  - Key packages: `raster`, `sf`, `terra`, `caret`, `randomForest`, `ggplot2`, `dplyr`, `rgdal`
+
+### GIS & Remote Sensing
+- **QGIS** (open-source GIS platform)
+- **GDAL** (installed with QGIS, used by R internally)
+- **GRASS GIS** *(optional)* — for hydrological analysis
+- **SAGA GIS** *(optional)* — for terrain morphometry and raster tools
+
+### OS Compatibility
+- ✅ Fully compatible with **Manjaro Linux**
+- Installed via:
+  ```bash
+  sudo pacman -S qgis gdal
+  yay -S grass saga-gis
+  ```
 
 ---
 
-## 📊 Prediction Goal
+## 📁 Project Structure
 
-The core goal is to **predict monthly or seasonal drinking water availability** based on:
-
-- Climate data (rainfall, temperature)
-- Water production or storage data (reservoir levels, extraction rates)
-- Population or demand indicators
-
----
-
-## 📁 Data Sources (Planned)
-
-| Data Type             | Source |
-|----------------------|--------|
-| Rainfall, Temperature | [CHIRPS](https://www.chc.ucsb.edu/data/chirps), [NASA POWER](https://power.larc.nasa.gov/) |
-| Hydrology (dams, reservoirs) | [ABH Oum Er-Rbia](http://www.abh-ouerra.com/) |
-| Population/Demand     | [HCP Morocco](https://www.hcp.ma) |
-| Water Infrastructure  | [ONEE](https://www.one.org.ma/) (if accessible) |
+```
+project-root/
+├── data/               # Input layers (DEM, soil, rainfall, etc.)
+├── scripts/            # R scripts for modeling and processing
+├── output/             # Maps, results, model outputs
+├── report/             # Final written report
+├── slides/             # Defense presentation
+└── README.md           # Project overview and instructions
+```
 
 ---
 
-## 🔄 Project Steps
+## 🧩 Data Layers (Inputs)
 
-1. **Define prediction goal** – availability of drinking water
-2. **Collect datasets** – rainfall, temperature, population, etc.
-3. **Clean & explore data** – remove outliers, check for missing values
-4. **Train machine learning models** – try different algorithms
-5. **Evaluate & compare** – choose the best model
-6. **Prototype interface** (optional) – create a dashboard using R Shiny
-7. **Write report and prepare presentation**
-
----
-
-## 📌 Region: Beni Mellal-Khénifra
-
-- Located in central Morocco
-- Known for agricultural activity and growing water needs
-- Subject to seasonal variation in rainfall and temperature
-- Data availability may vary by province (e.g., Beni Mellal, Azilal, Fquih Ben Salah…)
+| Layer              | Description                         | Source                    |
+|-------------------|-------------------------------------|---------------------------|
+| DEM               | Elevation model (for slope, drainage) | SRTM / USGS / Copernicus  |
+| Rainfall          | Long-term average or monthly totals | CHIRPS / NASA POWER       |
+| Soil              | Soil classification                 | FAO / HWSD                |
+| LULC              | Land use/land cover                 | Copernicus / ESA          |
+| Drainage Density  | Derived from DEM                    | QGIS / GRASS tool         |
+| Lineament Density | Optional (geological structures)    | From geology or satellite |
+| Well Data         | Known locations and yields (labels) | ABH, Ministry, surveys    |
 
 ---
 
-## ✅ Deliverables
+## 🤖 Machine Learning Approach
 
-- 📄 Final written report (academic format)
-- 📊 Working prototype (R script or dashboard)
-- 🎤 PowerPoint presentation for defense
+- Supervised learning using known well locations
+- Models:
+  - **Random Forest** (main)
+  - Support Vector Machines (optional)
+  - Logistic Regression (optional baseline)
+- Evaluation:
+  - Confusion matrix, accuracy, AUC
+  - Feature importance
+- Output:
+  - Groundwater potential map: High / Medium / Low
 
 ---
 
-## 🧠 Next Steps
+## 🔧 Installation Instructions
 
-- [ ] Collect climate and population data
-- [ ] Clean and prepare dataset in R
-- [ ] Train and evaluate models
-- [ ] Create visuals for report and slides
+### R + Required Packages
+
+```r
+install.packages(c(
+  "raster", "sf", "terra", "rgdal", "caret",
+  "randomForest", "dplyr", "ggplot2"
+))
+```
+
+### QGIS + GIS Tools (Manjaro)
+
+```bash
+sudo pacman -S qgis gdal
+yay -S grass saga-gis
+```
+
+---
+
+## 🚀 Next Steps
+
+1. Define study area boundary (shapefile for Béni Mellal)
+2. Download base layers (DEM, rainfall, etc.)
+3. Preprocess layers in QGIS (e.g., slope, drainage)
+4. Load into R, label data, and build ML model
+5. Generate final map and report
 
 ---
 
 ## 👨‍💻 Author
 
-- Name: [NAIM AYOUB]  
-- Degree: Bachelor's in Water & Environmental Sciences  
-- Region of Focus: Beni Mellal-Khénifra, Morocco  
-- Language: R  
+- **Name**: Naim Ayoub  
+- **University**: École Supérieure de Technologie – Kelaa des Sraghna  
+- **Academic Year**: 2025  
+- **Operating System**: Manjaro Linux  
 
 ---
 
+## 📄 License
+
+This is an academic project for educational use only.
