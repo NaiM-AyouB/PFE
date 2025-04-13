@@ -8,10 +8,10 @@
 ---
 
 ## 📂 1. Boundary File
-- [ ] Download administrative boundary of Béni Mellal (shapefile)
-- [ ] Clip it to a manageable extent if needed
-- [ ] Import into QGIS and verify projection (EPSG code)
-- [ ] Save in `/data/` as `beni_mellal_boundary.shp`
+- [x] Download administrative boundary of Béni Mellal (shapefile)
+- [x] Clip it to a manageable extent if needed
+- [x] Import into QGIS and verify projection (EPSG code)
+- [x] Save in `/data/` as `beni_mellal_boundary.shp`
 
 ---
 
