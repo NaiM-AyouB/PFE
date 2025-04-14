@@ -16,7 +16,7 @@
 ---
 
 ## 🗺️ 2. Elevation (DEM)
-- [ ] Download DEM (30m or 90m) – SRTM or Copernicus
+- [x] Download DEM (30m or 90m) – SRTM or Copernicus
 - [ ] Clip to study area in QGIS
 - [ ] Save in `/data/` as `dem_beni_mellal.tif`
 - [ ] Optional: Derive slope, aspect, curvature
