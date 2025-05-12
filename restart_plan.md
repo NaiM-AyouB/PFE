@@ -8,10 +8,10 @@
 
 ## 🗂️ Phase 1 – Setup
 
-- [ ] Create project folders: `data/`, `scripts/`, `output/`, `report/`, `slides/`
-- [ ] Create `README.md` and `checklist_phase2.md`
-- [ ] Download Béni Mellal boundary shapefile (e.g., from GADM)
-- [ ] Save it as `data/beni_mellal_boundary.shp`
+- [x] Create project folders: `data/`, `scripts/`, `output/`, `report/`, `slides/`
+- [x] Create `README.md` and `checklist_phase2.md`
+- [x] Download Béni Mellal boundary shapefile (e.g., from GADM)
+- [x] Save it as `data/beni_mellal_boundary.shp`
 
 ---
 
