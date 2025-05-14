@@ -17,11 +17,11 @@
 
 ## 🌍 Phase 2 – DEM Processing (Clean and Precise)
 
-- [ ] Download **ALL required DEM tiles** from EarthExplorer
-- [ ] Load all tiles into QGIS
-- [ ] Merge them into a single raster: `data/dem_merged.tif`
-- [ ] Clip merged DEM to Béni Mellal: `data/dem_beni_mellal.tif`
-- [ ] Reproject clipped DEM to UTM Zone 30N (EPSG:32630):  
+- [x] Download **ALL required DEM tiles** from EarthExplorer
+- [x] Load all tiles into QGIS
+- [x] Merge them into a single raster: `data/dem_merged.tif`
+- [x] Clip merged DEM to Béni Mellal: `data/dem_beni_mellal.tif`
+- [x] Reproject clipped DEM to UTM Zone 30N (EPSG:32630):  
       `data/dem_beni_mellal_utm.tif`
 
 ---
@@ -30,9 +30,9 @@
 
 **Use `dem_beni_mellal_utm.tif` as input for all:**
 
-- [ ] Generate slope map → `data/slope_beni_mellal.tif`
-- [ ] Generate aspect map → `data/aspect_beni_mellal.tif`
-- [ ] Generate curvature map → `data/curvature_beni_mellal.tif`
+- [x] Generate slope map → `data/slope_beni_mellal.tif`
+- [x] Generate aspect map → `data/aspect_beni_mellal.tif`
+- [x] Generate curvature map → `data/curvature_beni_mellal.tif`
 - [ ] Generate flow accumulation → `data/flow_acc.tif`
 - [ ] Extract stream network → `data/streams.tif`
 - [ ] Generate drainage density → `data/drainage_density.tif`
