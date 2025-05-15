@@ -75,4 +75,3 @@
 
 ---
 
-Stay focused and don’t skip any step. You’re building something great 💪
