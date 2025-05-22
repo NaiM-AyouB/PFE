@@ -33,18 +33,18 @@
 - [x] Generate slope map → `data/slope_beni_mellal.tif`
 - [x] Generate aspect map → `data/aspect_beni_mellal.tif`
 - [x] Generate curvature map → `data/curvature_beni_mellal.tif`
-- [ ] Generate flow accumulation → `data/flow_acc.tif`
-- [ ] Extract stream network → `data/streams.tif`
-- [ ] Generate drainage density → `data/drainage_density.tif`
+- [x] Generate flow accumulation → `data/flow_acc.tif`
+- [x] Extract stream network → `data/streams.tif`
+- [x] Generate drainage density → `data/drainage_density.tif`
 
 ---
 
 ## 🌿 Phase 4 – Environmental Layers
 
-- [ ] Download Rainfall data (NASA POWER or CHIRPS)
-- [ ] Download Soil map (FAO or national)
-- [ ] Download Land Use / Land Cover (ESA WorldCover)
-- [ ] Clip and reproject all rasters to match UTM + Béni Mellal
+- [x] Download Rainfall data (NASA POWER or CHIRPS)
+- [x] Download Soil map (FAO or national)
+- [x] Download Land Use / Land Cover (ESA WorldCover)
+- [x] Clip and reproject all rasters to match UTM + Béni Mellal
 
 ---
 
