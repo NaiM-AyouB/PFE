@@ -50,9 +50,9 @@
 
 ## 🧪 Phase 5 – Training Dataset Prep
 
-- [ ] Collect or simulate well locations and productivity levels
-- [ ] Label: High / Medium / Low groundwater potential
-- [ ] Extract raster values at each point (using Point Sampling Tool)
+- [x] Collect or simulate well locations and productivity levels
+- [x] Label: High / Medium / Low groundwater potential
+- [x] Extract raster values at each point (using Point Sampling Tool)
 - [ ] Create modeling-ready dataset (CSV or R dataframe)
 
 ---
