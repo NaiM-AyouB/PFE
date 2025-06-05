@@ -53,25 +53,25 @@
 - [x] Collect or simulate well locations and productivity levels
 - [x] Label: High / Medium / Low groundwater potential
 - [x] Extract raster values at each point (using Point Sampling Tool)
-- [ ] Create modeling-ready dataset (CSV or R dataframe)
+- [x] Create modeling-ready dataset (CSV or R dataframe)
 
 ---
 
 ## 🤖 Phase 6 – Machine Learning
 
-- [ ] Load data into R
-- [ ] Train models (Random Forest, SVM, Logistic Regression)
-- [ ] Evaluate metrics: Accuracy, AUC, Confusion Matrix
-- [ ] Generate classified groundwater potential map
+- [x] Load data into R
+- [x] Train models (Random Forest, SVM, Logistic Regression)
+- [x] Evaluate metrics: Accuracy, AUC, Confusion Matrix
+- [x] Generate classified groundwater potential map
 
 ---
 
 ## 📄 Phase 7 – Report and Presentation
 
-- [ ] Write full report: Intro → Method → Results → Conclusion
-- [ ] Prepare 10–15 slide presentation
-- [ ] Include maps, charts, methodology
-- [ ] Export everything in final folder
+- [x] Write full report: Intro → Method → Results → Conclusion
+- [x] Prepare 10–15 slide presentation
+- [x] Include maps, charts, methodology
+- [x] Export everything in final folder
 
 ---
 
